@@ -32,4 +32,10 @@
         конфиденциальности и обработки персональных данных, а также принимаете пользовательское
         соглашение
     </string>
+
+    <string name="tab_my">Мои</string>
+    <string name="tab_users">Пользователей</string>
+
+    <string name="nav_activity">Активность</string>
+    <string name="nav_profile">Профиль</string>
 </resources>

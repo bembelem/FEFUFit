@@ -75,6 +75,19 @@ class RegistrationActivity: AppCompatActivity() {
         }
     }
 
+    private fun setButtonsOnClickListeners() {
+        with(binding) {
+            icGoBack.setOnClickListener {
+                val intent = Intent(this@RegistrationActivity, WelcomeActivity::class.java)
+                startActivity(intent)
+            }
+            btnRegistration.setOnClickListener {
+                val intent = Intent(this@RegistrationActivity, ActivityActivity::class.java)
+                startActivity(intent)
+            }
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -83,9 +96,6 @@ class RegistrationActivity: AppCompatActivity() {
 
         makeLinks()
 
-        binding.icGoBack.setOnClickListener {
-            val intent = Intent(this@RegistrationActivity, WelcomeActivity::class.java)
-            startActivity(intent)
-        }
+        setButtonsOnClickListeners()
     }
 }
