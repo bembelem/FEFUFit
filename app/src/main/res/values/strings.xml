@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">FEFUFit</string>
+
+    <string name="title_welcome">Пожалуй, лучший фитнес трекер в ДВФУ</string>
+    <string name="title_registration">Регистрация</string>
+    <string name="title_login">Вход</string>
+    <string name="title_sex">Пол</string>
+
+    <string name="subtitle_welcome">Созданный студентами ПИКД</string>
+
+    <string name="link_welcome">Уже есть аккаунт?</string>
+    <string name="link_privacy_policy">политикой конфиденциальности</string>
+    <string name="link_user_agreement">пользовательское соглашение</string>
+
+    <string name="btn_registration">Зарегистрироваться</string>
+    <string name="btn_login">Войти</string>
+
+    <string name="radio_sex_man">Мужской</string>
+    <string name="radio_sex_woman">Женский</string>
+    <string name="radio_sex_other">Другое</string>
+
+    <string name="hint_login">Логин</string>
+    <string name="hint_nickname">Имя или никнейм</string>
+    <string name="hint_password">Пароль</string>
+    <string name="hint_password_repeat">Повторите пароль</string>
+
+    <string name="decription_ic_welcome_bicycles">Велосипеды</string>
+    <string name="description_ic_arrow_back">Вернуться назад</string>
+
+    <string name="caption_registration">
+        Нажимая на кнопку, вы соглашаетесь \n с политикой
+        конфиденциальности и обработки персональных данных, а также принимаете пользовательское
+        соглашение
+    </string>
 </resources>
