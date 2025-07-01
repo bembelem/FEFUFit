@@ -1,35 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="TextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="TextLinkStyle" parent="TextStyle">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="TextHeaderStyle" parent="TextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+    </style>
+
+    <style name="TextMainParameterStyle" parent="TextStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="TextAdditionalParameterStyle" parent="TextStyle">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+
+    <style name="IconStyle">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+    
+    <style name="IconReturnStyle" parent="IconStyle">
+        <item name="android:src">@drawable/ic_arrow_back</item>
+    </style>
+
+
     <style name="MaterialButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton">
         <item name="android:paddingVertical">12dp</item>
         <item name="android:paddingHorizontal">24dp</item>
         <item name="android:backgroundTint">@color/blue</item>
-        <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textAllCaps">false</item>
     </style>
 
     <style name="MaterialRadioButtonStyle" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
         <item name="buttonTint">@color/color_radio_button_tint</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/inter_regular</item>
         <item name="android:textColor">@color/text_dark</item>
-        <item name="android:textSize">16sp</item>
     </style>
+
 
     <style name="MaterialTextInputLayoutStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:inputType">text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
         <item name="boxStrokeWidth">1dp</item>
         <item name="boxStrokeColor">@color/color_text_input_box_stroke</item>
         <item name="hintTextColor">@color/blue</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:fontFamily">@font/inter_regular</item>
     </style>
 
     <style name="MaterialTextInputLayoutPasswordStyle" parent="MaterialTextInputLayoutStyle">
-        <item name="passwordToggleEnabled">true</item>
         <item name="android:inputType">textPassword</item>
+        <item name="passwordToggleEnabled">true</item>
     </style>
+
+    <style name="FABStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="elevation">6dp</item>
+        <item name="shapeAppearanceOverlay">@style/Shape.FAB.Circular</item>
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+    <style name="Shape.FAB.Circular" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">50%</item>
+    </style>
+
 
     <style name="TabTextStyle" parent="TextAppearance.AppCompat">
         <item name="android:textSize">16sp</item>

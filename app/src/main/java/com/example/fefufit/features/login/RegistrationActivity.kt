@@ -1,4 +1,4 @@
-package com.example.fefufit
+package com.example.fefufit.features.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +12,8 @@ import android.view.View.OnClickListener
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.example.fefufit.ui.ActivityActivity
+import com.example.fefufit.R
 import com.example.fefufit.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity: AppCompatActivity() {

@@ -1,8 +1,9 @@
-package com.example.fefufit
+package com.example.fefufit.features.login
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.fefufit.ui.ActivityActivity
 import com.example.fefufit.databinding.ActivityLoginBinding
 
 class LoginActivity:AppCompatActivity() {

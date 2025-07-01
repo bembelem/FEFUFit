@@ -1,4 +1,4 @@
-package com.example.fefufit
+package com.example.fefufit.features.login
 
 import android.content.Intent
 import android.os.Bundle

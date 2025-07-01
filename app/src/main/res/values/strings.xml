@@ -5,15 +5,23 @@
     <string name="title_registration">Регистрация</string>
     <string name="title_login">Вход</string>
     <string name="title_sex">Пол</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_password_change">Изменить пароль</string>
+    <string name="title_activity_new">Погнали? :)</string>
 
     <string name="subtitle_welcome">Созданный студентами ПИКД</string>
 
     <string name="link_welcome">Уже есть аккаунт?</string>
     <string name="link_privacy_policy">политикой конфиденциальности</string>
     <string name="link_user_agreement">пользовательское соглашение</string>
+    <string name="link_save">Сохранить</string>
+    <string name="link_password_change">Изменить пароль</string>
 
     <string name="btn_registration">Зарегистрироваться</string>
     <string name="btn_login">Войти</string>
+    <string name="btn_logout">Выйти</string>
+    <string name="btn_accept">Принять</string>
+    <string name="btn_start">Начать</string>
 
     <string name="radio_sex_man">Мужской</string>
     <string name="radio_sex_woman">Женский</string>
@@ -22,10 +30,19 @@
     <string name="hint_login">Логин</string>
     <string name="hint_nickname">Имя или никнейм</string>
     <string name="hint_password">Пароль</string>
+    <string name="hint_password_old">Старый пароль</string>
+    <string name="hint_password_new">Новый пароль</string>
     <string name="hint_password_repeat">Повторите пароль</string>
+    <string name="hint_comment">Комментарий</string>
 
-    <string name="decription_ic_welcome_bicycles">Велосипеды</string>
+    <string name="description_fab_start">Начать новую активность</string>
+    <string name="description_fab_finish">Завершить текущую активность</string>
+    <string name="description_ic_welcome_bicycles">Велосипеды</string>
     <string name="description_ic_arrow_back">Вернуться назад</string>
+
+    <string name="activity_details_start">Старт</string>
+    <string name="activity_details_divider">|</string>
+    <string name="activity_details_finish">Финиш</string>
 
     <string name="caption_registration">
         Нажимая на кнопку, вы соглашаетесь \n с политикой

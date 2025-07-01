@@ -7,28 +7,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp">
 
         <ImageView
+            style="@style/IconReturnStyle"
             android:id="@+id/ic_go_back"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="16dp"
-            android:src="@drawable/ic_arrow_back"
-            android:contentDescription="@string/description_ic_arrow_back"/>
+            android:contentDescription="@string/description_ic_arrow_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            style="@style/TextHeaderStyle"
+            android:layout_marginStart="16dp"
             android:text="@string/title_registration"
-            android:textSize="20sp"
-            android:fontFamily="@font/inter_semi_bold"
-            android:textColor="@color/text_dark"/>
-    </LinearLayout>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ic_go_back"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -39,7 +38,7 @@
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".WelcomeActivity">
+            tools:context=".features.login.WelcomeActivity">
 
             <LinearLayout
                 android:id="@+id/linearLayout"
@@ -95,14 +94,10 @@
             </LinearLayout>
 
             <TextView
+                style="@style/TextHeaderStyle"
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:fontFamily="@font/inter_semi_bold"
                 android:text="@string/title_sex"
-                android:textColor="@color/text_dark"
-                android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -115,21 +110,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
+                    style="@style/MaterialRadioButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/MaterialRadioButtonStyle"
                     android:text="@string/radio_sex_man" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
+                    style="@style/MaterialRadioButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/MaterialRadioButtonStyle"
                     android:text="@string/radio_sex_woman" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
+                    style="@style/MaterialRadioButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/MaterialRadioButtonStyle"
                     android:text="@string/radio_sex_other" />
             </RadioGroup>
 
@@ -143,14 +138,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
             <TextView
+                style="@style/TextStyle"
                 android:id="@+id/tvCaptionRegistration"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_regular"
-                android:text="@string/caption_registration"
                 android:textAlignment="center"
-                android:textColor="@color/text_dark"
                 android:textSize="12sp"
+                android:text="@string/caption_registration"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnRegistration" />
